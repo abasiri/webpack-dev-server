@@ -73,9 +73,6 @@ if(!options.outputPath)
 	options.outputPath = "/";
 if(!options.filename)
 	options.filename = firstWpOpt.output && firstWpOpt.output.filename;
-[].concat(wpOpt).forEach(function(wpOpt) {
-	wpOpt.output.path = "/";
-});
 
 if(!options.watchOptions)
 	options.watchOptions = firstWpOpt.watchOptions;
